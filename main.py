@@ -1,7 +1,9 @@
 """make.fun news-image-20261122 entry: copy the day's front page to the output.
 
 Standard library only, no network. The rendered image is committed next to
-this file, so every run writes exactly the same bytes.
+this file, so every run writes exactly the same bytes. Resubmit v2 (23 Nov
+2026) ships the updated front page: COP31 collapses, India post a record
+720, protests enter day three, plus Mercury / Ukraine / Sudan briefs.
 """
 
 import os
