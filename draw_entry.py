@@ -2,6 +2,11 @@
 
 Run with Pillow installed:  python3 draw_entry.py
 Everything is drawn with plain PIL shapes and DejaVu fonts; no network.
+
+Resubmit v2 (23 Nov 2026): the Sunday story moved on after v1 was filed —
+COP31 collapsed with no deal, India declared on a record 720, the protests
+entered their third day, and three briefs join the page (Mercury, Ukraine,
+Sudan). All stories verified against reporting dated Sunday 22 November 2026.
 """
 import math
 import os
@@ -108,7 +113,7 @@ def cop_panel(d, x0, y0, x1, y1):
     # caption strip
     d.rectangle((x0, y1 - 40, x1, y1), fill=INK)
     fcap = font(SANS_B, 20)
-    cap = "FINAL TEXT TABLED OVERNIGHT"
+    cap = "NO DEAL IN ANTALYA"
     d.text((x0 + (w - text_w(d, cap, fcap)) // 2, y1 - 34), cap, font=fcap, fill=PAPER)
 
 
@@ -200,27 +205,27 @@ def main():
     d.text(((W - text_w(d, date, fdte)) // 2, 116), date, font=fdte, fill=PAPER)
 
     # lead story: about 40% of the page
-    top, bottom = 180, 556
+    top, bottom = 180, 540
     cop_panel(d, M, top, M + 450, bottom)
     tx = M + 472
     tw = W - M - tx
     y = story(d, tx, top + 20, tw, "LEAD · CLIMATE · ANTALYA",
-              "COP31 NEARS DEAL AT DAWN",
-              "Final text tabled overnight; delegates vote Sunday morning",
-              62, 3, 23, bottom - 70)
+              "COP31 COLLAPSES IN ANTALYA",
+              "EU rejects final draft with no mention of fossil fuels; summit ends with no deal",
+              62, 2, 23, bottom - 70)
     fx = font(SANS_B, 20)
-    extra = wrap(d, "Plenary reconvenes 06:00 GMT after talks ran past Friday's deadline",
+    extra = wrap(d, "Longest climate summit on record — two days past deadline; first no-deal since 2009",
                  fx, tw)
     d.line((tx, y + 8, tx + 60, y + 8), fill=RED, width=3)
     block(d, tx, y + 16, extra, fx, INK, 1.1)
     d.line((M, bottom + 12, W - M, bottom + 12), fill=INK, width=2)
 
     # row one: cricket, full width
-    ry, row_end = 580, 772
+    ry, row_end = 564, 734
     cricket_icon(d, M + 4, ry + 6, 120)
     story(d, M + 250, ry + 6, W - M - (M + 250), "SPORT · WELLINGTON",
-          "PANT TON PUTS INDIA ON TOP",
-          "Pant's 128 takes India past 600 — a record total in New Zealand",
+          "INDIA POST RECORD 720",
+          "Pant's 128 powers India to 720/9 declared — highest Test total in New Zealand; hosts 119/2, trailing by 233",
           44, 2, 19, row_end)
     d.line((M, row_end + 12, W - M, row_end + 12), fill=INK, width=2)
 
@@ -228,12 +233,24 @@ def main():
     ry2 = row_end + 24
     protest_icon(d, M + 4, ry2 + 2, 118)
     story(d, M + 250, ry2 + 2, W - M - (M + 250), "EUROPE",
-          "STREETS STAY FULL INTO SUNDAY",
-          "Youth protests over living costs roll into Sunday across 25 nations",
-          44, 2, 19, H - 44)
+          "THIRD DAY ON THE STREETS",
+          "Protests over living costs and housing roll on, Portugal to France; 82,500 marched in France on Saturday",
+          40, 2, 18, 928)
+
+    # also today: two briefs from beyond the big three stories
+    d.line((M, 934, W - M, 934), fill=INK, width=1)
+    ftag = font(SANS_B, 16)
+    fbrief = font(SANS, 16)
+    sy = 942
+    for tag, rest in (
+            ("MERCURY — ", "ESA confirms BepiColombo in orbit after an eight-year voyage; thruster glitch under review"),
+            ("UKRAINE · SUDAN — ", "Drone hits flats near Kyiv, 14 missing; four killed near Khartoum, UN building hit")):
+        d.text((M, sy), tag, font=ftag, fill=RED)
+        d.text((M + text_w(d, tag, ftag), sy), rest, font=fbrief, fill=INK)
+        sy += 22
 
     ff = font(SANS, 15)
-    foot = "Events reported on Sunday 22 November 2026  ·  Sources: Reuters, CNN, Al Jazeera"
+    foot = "Events reported on Sunday 22 November 2026  ·  Sources: Reuters, The Times, France 24, Cricinfo, UN OCHA"
     d.line((M, H - 34, W - M, H - 34), fill=INK, width=1)
     d.text(((W - text_w(d, foot, ff)) // 2, H - 28), foot, font=ff, fill=GREY)
 
