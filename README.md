@@ -8,23 +8,39 @@ Entry for the make.fun competition **news-image-20261122** — "Sum up 22 Novemb
 world news in one image". The program draws one front page, *The World in One Day*,
 for **Sunday, 22 November 2026**.
 
+Resubmit v2 (23 Nov 2026): the Sunday story moved on after v1 was filed — COP31
+collapsed with no deal, India declared on a record 720, the protests entered
+their third day, and three briefs join the page. All stories verified against
+reporting dated Sunday 22 November 2026.
+
 ![The World in One Day — Sunday, 22 November 2026](entry.png)
 
 ## The day's stories
 
-1. **LEAD · CLIMATE · ANTALYA — "COP31 NEARS DEAL AT DAWN"**
-   The COP31 climate summit in Antalya nears a deal: a final text package was
-   tabled overnight after talks ran past Friday's deadline into Saturday, with
-   fossil fuels and adaptation finance addressed; the plenary reconvenes Sunday
-   morning (06:00 GMT) to approve it. *(Reuters, 22 Nov 2026)*
-2. **SPORT · WELLINGTON — "PANT TON PUTS INDIA ON TOP"**
-   Rishabh Pant's 128 takes India past 600 — India's highest Test total in
-   New Zealand — leading by 261 at lunch on day four in Wellington.
-   *(Reuters, 22 Nov 2026)*
-3. **EUROPE — "STREETS STAY FULL INTO SUNDAY"**
-   Youth protests over living costs roll into Sunday across 25 nations; 82,500
-   people marched in France on Saturday alone, with transport strikes in Italy.
-   *(CNN / Al Jazeera, 22 Nov 2026)*
+1. **LEAD · CLIMATE · ANTALYA — "COP31 COLLAPSES IN ANTALYA"**
+   The COP31 climate summit in Antalya ends with no deal: the EU and the UK
+   reject a final draft that makes no mention of fossil fuels, and the
+   presidency concedes there is no consensus. The longest climate summit on
+   record — two days past its deadline, the first COP to end with no deal
+   since Copenhagen in 2009. *(The Times / Turkish Minute / CarrZee, 22 Nov 2026)*
+2. **SPORT · WELLINGTON — "INDIA POST RECORD 720"**
+   Rishabh Pant's 128 powers India to 720/9 declared — the highest Test total
+   ever made in New Zealand — a lead of 352. New Zealand close day four on
+   119/2, Devon Conway unbeaten on 59, still trailing by 233.
+   *(Cricbuzz / Cricinfo, 22 Nov 2026)*
+3. **EUROPE — "THIRD DAY ON THE STREETS"**
+   Protests over living costs and housing roll into a third consecutive day,
+   from Portugal to France; France's demonstrations run for a sixth weekend
+   in a row, with 82,500 marching nationwide on Saturday, 21,500 in Paris.
+   *(France 24 / Edge News, 22 Nov 2026)*
+4. **ALSO TODAY**
+   - **MERCURY** — ESA confirms BepiColombo in orbit after an eight-year
+     voyage; a thruster glitch is under review, the spacecraft safe.
+     *(Reuters / ESA, 22 Nov 2026)*
+   - **UKRAINE** — A Russian drone hits a five-storey apartment block in
+     Dymer, near Kyiv; 14 people missing. *(Reuters / France 24, 22 Nov 2026)*
+   - **SUDAN** — Drones kill four near Khartoum and damage a UN building
+     with staff inside. *(UN OCHA / Al Jazeera, 22 Nov 2026)*
 
 ## How to run
 
